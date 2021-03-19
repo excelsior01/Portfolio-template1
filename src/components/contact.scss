@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+.Contact {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans";
+
+  form {
+    width: 700px;
+    height: 700px;
+    background: rgba(44, 2, 2, 0.911);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 500px;
+    }
+
+    h2 {
+      color: white;
+      margin: 3rem;
+      @media (max-width: 768px) {
+        margin: 1rem;
+      }
+    }
+    .form-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+       
+    }
+  }
+}
+
+.form-submit {
+    display:flex;
+    justify-content: center;
+  input {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: black;
+    
+    &:hover {
+      background: #2e0101;
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      box-shadow: 0 0 5px #640414, 0 0 25px #f4033f, 0 0 50px #c50e0e,
+        0 0 100px #f4037b;
+    }
+  }
+}
+
+.form-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 400px;
+    height: 40px;
+  }
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+}
+
+.form-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 400px;
+    height: 40px;
+    @media (max-width: 375px) {
+        width: 300px;
+      }
+  }
+  
+}
+.form-subject{
+    
+    display: flex;
+    justify-content: center;
+}
+
+input {
+  margin: 30px;
+  border-radius: 15px;
+  padding: 1rem;
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 20px;
+  }
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+  
+}
+
+textarea {
+  border-radius: 15px;
+  padding: 1rem;
+  width: 500px;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+}
